@@ -1,0 +1,167 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+}
+
+header {
+    background-color: #333;
+    padding: 15px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+.main-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    background-color: #ffffff;
+    margin: 0 50px 50px;
+    min-height: 80vh;
+}
+
+.content-container {
+    display: flex;
+    gap: 20px;
+    max-width: 1200px;
+    width: 100%;
+    align-items: center;
+    height: 100%;
+    
+}
+
+.profile-img {
+    width: 300px;
+    height: auto;
+    border-radius: 5%;
+}
+
+.description {
+    width: 60%;
+}
+
+.description h1 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.description h2 {
+    font-size: 24px;
+    color: #777;
+    margin-bottom: 20px;
+}
+
+.description p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.personal-details {
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.Hire_Me {
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.Hire_Me:hover {
+    background-color: #555;
+}
+
+.social-icons {
+    right: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 10%;
+}
+
+.social-icons  img {
+    width: 40px;
+    height: 40px;
+    transition: transform 0.3s;
+}
+
+.social-icons a img:hover {
+    transform: scale(1.2);
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+
+@media (max-width: 768px) {    
+    header{
+        padding: 5px;
+   }
+
+    .main-section {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .content-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .profile-img {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .description {
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .social-icons {
+        position: static;
+        margin-top: 20px;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .social-icons img {
+        width: 30px;
+        height: 30px;
+    }
+
+    footer { 
+        position: fixed;
+    }
+}
+
